@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+import Component, {FunctionComponent} from './component/Component';
 import './App.css';
+import CurlyBraces from './component/CurlyBraces';
+import Properties from './component_manage/Properties';
+import Gallery from './component_manage/example/Example1';
+import ConditionalRender from './component_manage/example/ConditionalRender';
+import Example2 from './component_manage/example/Example2';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Component /> */}
+      {/* <FunctionComponent /> */}
+      {/* <CurlyBraces /> */}
+      {/* <Properties /> */}
+      {/*<ConditionalRender/>*/}
+      <Example2/>
+    </>
   );
 }
 
