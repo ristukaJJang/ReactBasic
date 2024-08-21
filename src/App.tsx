@@ -15,10 +15,10 @@ function App() {
       <FunctionComponent />
       <CurlyBraces /> 
       <Properties /> 
-      <ConditionalRender/>
-      <Example2/> */}
-      
-      <ListRender/>
+      <ConditionalRender/>*/}
+      <Example2/> 
+
+      {/* <ListRender/> */}
       
     </>
   );
