@@ -15,7 +15,7 @@ export default function StateComponent() {
     
     // let counts: number[] = [];
     const [total, setTotal] = useState<number>(0);
-    const [counts, setCounts] = useState<[]>([0]);
+    //const [counts, setCounts] = useState<[]>([0]);
 
     const [comment, setComment] = useState<string>('');
 
@@ -70,8 +70,8 @@ export default function StateComponent() {
 
         // 타입이 배열 혹은 객체 형태인 상태는
         // 반드시 새로운 배열 혹은 객체를 생성하고 변경해야 인식함
-        const newCounts = [...counts, newCount];
-        setCounts(newCounts);
+        //const newCounts = [...counts, newCount];
+        //setCounts(newCounts);
 
     };
 
@@ -93,7 +93,7 @@ export default function StateComponent() {
       <input onChange={onChangeHandler} />
       <h1>{count}</h1>
       <h1>{total}</h1>
-      <h1>counts length: {counts.length} {counts}</h1>
+      {/*<h1>counts length: {counts.length} {counts}</h1>*/}
       <button onClick={onIncrease}>+</button>
     </div>
   )
